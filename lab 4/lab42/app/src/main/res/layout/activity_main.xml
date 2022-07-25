@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+        <EditText
+            android:id="@+id/Note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="Enter a New Note"
+            android:inputType="text"
+            />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            />
+        <ListView
+            android:id="@+id/simpleListView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/material_blue_grey_800"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
+

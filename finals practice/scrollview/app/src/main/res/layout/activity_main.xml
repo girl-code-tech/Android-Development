@@ -1,0 +1,96 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Topic"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apps often need to display data in
+similarly styled containers. These containers are often used in lists
+to hold each item's information. The system provides the CardView API
+as an easy way for you to show information inside cards that have a
+consistent look across the platform. These cards have a default
+elevation above their containing view group, so the system draws
+shadows below them. Cards provide an easy way to contain a group of
+views while providing a consistent style for the container. Apps often
+need to display data in similarly styled containers. These containers
+are often used in lists to hold each item's information. The system
+provides the CardView API as an easy way for you to show information
+inside cards that have a consistent look across the platform. These
+cards have a default elevation above their containing view group, so
+the system draws shadows below them. Cards provide an easy way to
+contain a group of views while providing a consistent style for the
+container. Apps often need to display data in similarly styled
+containers. These containers are often used in lists to hold each
+item's information. The system provides the CardView API as an easy
+way for you to show information inside cards that have a consistent
+look across the platform. These cards have a default elevation above
+their containing view group, so the system draws shadows below them.
+Cards provide an easy way to contain a group of views while providing
+a consistent style for the container. Apps often need to display data
+in similarly styled containers. These containers are often used in
+lists to hold each item's information. The system provides the
+CardView API as an easy way for you to show information inside cards
+that have a consistent look across the platform. These cards have a
+default elevation above their containing view group, so the system
+draws shadows below them. Cards provide an easy way to contain a group
+of views while providing a consistent style for the container. Apps
+often need to display data in similarly styled containers. These
+containers are often used in lists to hold each item's information.
+The system provides the CardView API as an easy way for you to show
+information inside cards that have a consistent look across the
+platform. These cards have a default elevation above their containing
+view group, so the system draws shadows below them. Cards provide an
+easy way to contain a group of views while providing a consistent
+style for the container. Apps often need to display data in similarly
+styled containers. These containers are often used in lists to hold
+each item's information. The system provides the CardView API as an
+easy way for you to show information inside cards that have a
+consistent look across the platform. These cards have a default
+elevation above their containing view group, so the system draws
+shadows below them. Cards provide an easy way to contain a group of
+views while providing a consistent style for the container."
+                android:inputType="textMultiLine"
+                android:textSize="18dp"
+                >
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatUpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="gotoTop"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="30dp"
+        app:srcCompat="@android:drawable/arrow_up_float" />
+</FrameLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/show_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="Enter The Details for Registration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="190dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:hint="First name"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/show_data"
+        tools:ignore="UnknownId" />
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="209dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="8dp"
+        android:hint="Last name"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_data"
+        tools:ignore="UnknownId" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="419dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fname"
+        tools:ignore="UnknownId" />
+
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="260dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            app:layout_constraintTop_toBottomOf="@+id/state"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="174dp" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            app:layout_constraintTop_toBottomOf="@+id/state"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="330dp" />
+
+        <RadioButton
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            app:layout_constraintTop_toBottomOf="@+id/state"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="330dp" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/dob_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Select Date of Birth"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/gender"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <DatePicker
+        android:id="@+id/DOB"
+        android:layout_width="252dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="12dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gender" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Password (Numbers)"
+        android:inputType="numberPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DOB" />
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
+
+    <TextView
+        android:id="@+id/check_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Agree? Privacy &amp; Policy"
+        android:textSize="16sp"
+
+        app:layout_constraintTop_toBottomOf="@+id/Password"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="204dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="86dp"
+        android:layout_height="41dp"
+        android:text="Register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_text"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
